@@ -40,7 +40,7 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT_kc(
  //,----+----+----+----+----+----|----+----+----+----+----+----+----.
-    GESC, Q  , W  , E  , R  , T  , Y  , U  , I  , O  , P  ,LCBR,RCBR,
+    GESC, Q  , W  , E  , R  , T  , Y  , U  , I  , O  , P  ,LBRC,RBRC,
  //|----`----`----`----`----`----|----`----`----`----`----`----`----|
     TBCTL, A  , S  , D  , F  , G  , H  , J  , K  , L  ,SCLN, ENTER  ,
  //|-----`----`----`----`----`----|----`----`----`----`----`--------|
