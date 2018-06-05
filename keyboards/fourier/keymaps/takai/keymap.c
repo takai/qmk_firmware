@@ -25,6 +25,7 @@ enum custom_keycodes {
 #define KC_SPFN2 LT(_FN2, KC_SPACE)
 #define KC_BSFN1 LT(_FN1, KC_BSPC)
 #define KC_BSFN2 LT(_FN2, KC_BSPC)
+#define KC_TBCTL CTL_T(KC_TAB)
 #define KC_RST RESET
 #define KC_DBUG DEBUG
 #define KC_RTOG RGB_TOG
@@ -41,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //,----+----+----+----+----+----|----+----+----+----+----+----+----.
     GESC, Q  , W  , E  , R  , T  , Y  , U  , I  , O  , P  ,LCBR,RCBR,
  //|----`----`----`----`----`----|----`----`----`----`----`----`----|
-    LCTL , A  , S  , D  , F  , G  , H  , J  , K  , L  ,SCLN, ENTER  ,
+    TBCTL, A  , S  , D  , F  , G  , H  , J  , K  , L  ,SCLN, ENTER  ,
  //|-----`----`----`----`----`----|----`----`----`----`----`--------|
     LSFT   , Z  , X  , C  , V  , B  , N  , M  ,COMM,DOT ,SLSH, RSFT ,
  //|-------`----`----`----`----`----|----`----`----`----`----`------|
