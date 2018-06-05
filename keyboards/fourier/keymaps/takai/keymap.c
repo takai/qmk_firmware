@@ -11,6 +11,7 @@ extern keymap_config_t keymap_config;
 #define _BASE 0
 #define _FN1 1
 #define _FN2 2
+#define _FN3 3
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
@@ -21,6 +22,7 @@ enum custom_keycodes {
 #define XXXXXXX KC_NO
 #define KC_FN1 MO(_FN1)
 #define KC_FN2 MO(_FN2)
+#define KC_FN3 MO(_FN3)
 #define KC_SPFN1 LT(_FN1, KC_SPACE)
 #define KC_SPFN2 LT(_FN2, KC_SPACE)
 #define KC_BSFN1 LT(_FN1, KC_BSPC)
@@ -36,6 +38,10 @@ enum custom_keycodes {
 #define KC_RSAD RGB_SAD
 #define KC_RVAI RGB_VAI
 #define KC_RVAD RGB_VAD
+#define KC_OPTL RALT(KC_LEFT)
+#define KC_OPTR RALT(KC_RGHT)
+#define KC_OPTD RALT(KC_DOWN)
+#define KC_OPTU RALT(KC_UP)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT_kc(
@@ -46,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //|-----`----`----`----`----`----|----`----`----`----`----`--------|
     LSFT   , Z  , X  , C  , V  , B  , N  , M  ,COMM,DOT ,SLSH, RSFT ,
  //|-------`----`----`----`----`----|----`----`----`----`----`------|
-    FN1  ,LALT,LGUI ,    , SPFN1  , BSFN2  ,RGUI ,RALT , FN2 , FN1
+    FN1  ,LALT,LGUI ,    , SPFN1  , BSFN2  ,     ,RGUI ,RALT , FN3
  //`-----+----+-----+----+--------|--------+-----+-----+-----+------'
   ) ,
 
@@ -58,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //|-----`----`----`----`----`----|----`----`----`----`----`--------|
           ,     ,    ,    ,    ,    ,    , 1  , 2  , 3  , UP , RGHT ,
  //|-------`----`----`----`----`----|----`----`----`----`----`------|
-         ,    ,     ,    ,        ,  RST   ,  0  ,LEFT ,DOWN ,
+         ,    ,     ,    ,        ,  RST   ,     ,LEFT ,DOWN ,
  //`-----+----+-----+----+--------|--------+-----+-----+-----+------'
   ),
 
@@ -71,6 +77,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            ,    ,    ,DEL ,PGDN,END ,    ,    ,    ,    ,    ,      ,
  //|-------`----`----`----`----`----|----`----`----`----`----`------|
          ,    ,     ,LGUI,  RST   ,        ,     ,     ,     ,
+ //`-----+----+-----+----+--------|--------+-----+-----+-----+------'
+  ),
+
+  [_FN3] = LAYOUT_kc(
+ //,----+----+----+----+----+----|----+----+----+----+----+----+----.
+    ESC , 1  , 2  , 3  , 4  , 5  , 6  , 7  , 8  , 9  , 0  ,    ,    ,
+ //|----`----`----`----`----`----|----`----`----`----`----`----`----|
+         ,    ,    ,    ,    ,    ,    , 4  , 5  , 6  ,    ,        ,
+ //|-----`----`----`----`----`----|----`----`----`----`----`--------|
+          ,     ,    ,    ,    ,    ,    , 1  , 2  , 3  ,OPTU, OPTR ,
+ //|-------`----`----`----`----`----|----`----`----`----`----`------|
+         ,    ,     ,    ,        ,  RGUI   ,     ,OPTL, OPTD ,
  //`-----+----+-----+----+--------|--------+-----+-----+-----+------'
   )
 
