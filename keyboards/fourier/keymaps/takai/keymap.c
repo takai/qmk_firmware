@@ -38,8 +38,8 @@ enum custom_keycodes {
 #define KC_RSAD RGB_SAD
 #define KC_RVAI RGB_VAI
 #define KC_RVAD RGB_VAD
-#define KC_OPTL RALT(KC_LEFT)
-#define KC_OPTR RALT(KC_RGHT)
+#define KC_GUIL RGUI(KC_LEFT)
+#define KC_GUIR RGUI(KC_RGHT)
 #define KC_OPTD RALT(KC_DOWN)
 #define KC_OPTU RALT(KC_UP)
 
@@ -86,9 +86,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //|----`----`----`----`----`----|----`----`----`----`----`----`----|
          ,    ,    ,    ,    ,    ,    , 4  , 5  , 6  ,    ,        ,
  //|-----`----`----`----`----`----|----`----`----`----`----`--------|
-          ,     ,    ,    ,    ,    ,    , 1  , 2  , 3  ,OPTU, OPTR ,
+          ,     ,    ,    ,    ,    ,    , 1  , 2  , 3  ,OPTU, GUIR ,
  //|-------`----`----`----`----`----|----`----`----`----`----`------|
-         ,    ,     ,    ,        ,  RGUI   ,     ,OPTL, OPTD ,
+         ,    ,     ,    ,        ,        ,     ,GUIL , OPTD ,
  //`-----+----+-----+----+--------|--------+-----+-----+-----+------'
   )
 
