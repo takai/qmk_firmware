@@ -81,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  //,----+----+----+----+----+----|----+----+----+----+----+----+----.
     TAB ,EXLM, AT ,HASH,DLR ,PERC,CIRC,AMPR,ASTR,LPRN,RPRN,UNDS,PLUS,
  //|----`----`----`----`----`----|----`----`----`----`----`----`----|
-         ,    ,    ,INS ,PGUP,HOME,    ,    ,    ,    ,PIPE, DQUO   ,
+         ,    ,    ,INS ,PGUP,HOME,LEFT,DOWN,UP  ,RGHT,PIPE, DQUO   ,
  //|-----`----`----`----`----`----|----`----`----`----`----`--------|
            ,    ,    ,DEL ,PGDN,END ,    ,    ,    ,    ,    ,      ,
  //|-------`----`----`----`----`----|----`----`----`----`----`------|
