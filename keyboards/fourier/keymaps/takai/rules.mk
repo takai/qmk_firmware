@@ -3,3 +3,4 @@ ifndef QUANTUM_DIR
 endif
 
 TAP_DANCE_ENABLE = yes
+RGBLIGHT_ENABLE = yes
