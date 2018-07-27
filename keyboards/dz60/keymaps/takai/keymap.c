@@ -14,6 +14,7 @@
 #define KC_RVAI RGB_VAI
 #define KC_RVAD RGB_VAD
 #define KC_RST RESET
+#define KC_IME LALT(KC_GRV)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -41,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // |-------+----+----+----+----+----+----+----+----+----+----+----+-----------|
             ,    ,    ,    ,RHUD,RSAD,RVAD,    ,    ,    ,    ,    ,    ,    ,    ,\
     // |---------+----+----+----+----+----+----+----+----+----+---------+----+----|
-             ,     ,     ,    ,    ,                     ,    ,    ,    ,    ,RST
+             ,IME  ,     ,    ,    ,                     ,    ,    ,    ,    ,RST
     // |-----+-----+-----+-------------------------------+----+----+----+----+----|
   ),
 };
