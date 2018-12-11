@@ -65,9 +65,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // |----+----+----+----+----|----+----+----+----+----|
          1  , 2  , 3  , 4  , 5  , 6  , 7  , 8  , 9  , 0  ,
     // |----+----+----+----+----|----+----+----+----+----|
-        GTAB,GENT,CENT,    ,    ,    ,BSLS,PIPE,QUOT,DQUO,
+        GTAB,GENT,CENT,    ,    ,PIPE,LPRN,RPRN,QUOT,DQUO,
     // |----+----+----+----+----|----+----+----+----+----|
-        ESC ,    ,    ,    ,    ,    ,LBRC,RBRC,LCBR,RCBR,
+        ESC ,    ,    ,    ,    ,BSLS,LBRC,RBRC,LCBR,RCBR,
     // |----+----+----+----+----|----+----+----+----+----|
                       ,    ,    ,    ,    ,
     //           |----+----+----|----+----+----|
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_FN2] = LAYOUT_kc(
     // |----+----+----+----+----|----+----+----+----+----|
-        EXLM, AT ,HASH,DLR ,PERC,CIRC,AMPR,ASTR,LPRN,RPRN,
+        EXLM, AT ,HASH,DLR ,PERC,CIRC,AMPR,ASTR,TAB ,BSPC,
     // |----+----+----+----+----|----+----+----+----+----|
             ,    ,    ,    ,    ,LEFT,DOWN, UP ,RGHT,ENT ,
     // |----+----+----+----+----|----+----+----+----+----|
