@@ -22,6 +22,11 @@ enum layer_names {
 
 #define KC_FN MO(_FN)
 
+#define KC_GLFT LGUI_T(KC_LEFT)
+#define KC_GRGT LGUI_T(KC_RGHT)
+#define KC_ALUP  LALT_T(KC_UP)
+#define KC_ALDN  LALT_T(KC_DOWN)
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_tkl_ansi( /* Base */
         KC_ESC,           KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,           KC_MUTE, KC_VOLD, KC_VOLU, \
@@ -29,14 +34,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS,          KC_DEL,  KC_END,  KC_PGDN, \
         KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,          KC_ENT,                                      \
         KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,          KC_RSFT,                   KC_UP,            \
-        KC_LALT, KC_NO,   KC_LGUI,                            KC_SPC,                             KC_NO,   KC_RGUI, KC_NO,   KC_FN,            KC_LEFT, KC_DOWN, KC_RGHT \
+        KC_LALT, KC_NO,   KC_LGUI,                            KC_SPC,                             KC_NO,   KC_RGUI, KC_NO,   KC_FN,            KC_LEFT, KC_DOWN, KC_RGHT  \
     ),
     [_FN] = LAYOUT_tkl_ansi( /* Base */
         _______,          _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______, _______, _______, \
         RGB_TOG, RGB_MOD, RGB_HUI, RGB_SAI, RGB_VAI, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______, _______, _______, \
         KC_CAPS, RGB_RMOD,RGB_HUD, RGB_SAD, RGB_VAD, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______, _______, _______, \
         _______, KC_VOLD, KC_VOLU, KC_MUTE, _______, _______, _______, _______, _______, _______, _______, _______,          _______,                                     \
-        _______,          _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______,                   _______,          \
-        RESET,   _______, _______,                            _______,                            _______, _______, _______, _______,          _______, _______, _______  \
+        _______,          _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,          _______,                   KC_ALUP,          \
+        RESET,   _______, _______,                            _______,                            _______, _______, _______, _______,          KC_GLFT, KC_ALDN, KC_GRGT  \
     ),
 };
