@@ -22,10 +22,10 @@ enum layer_names {
 
 #define KC_FN MO(_FN)
 
-#define KC_GLFT LGUI_T(KC_LEFT)
-#define KC_GRGT LGUI_T(KC_RGHT)
-#define KC_ALUP  LALT_T(KC_UP)
-#define KC_ALDN  LALT_T(KC_DOWN)
+#define KC_GLFT LGUI(KC_LEFT)
+#define KC_GRGT LGUI(KC_RGHT)
+#define KC_ALUP  LALT(KC_UP)
+#define KC_ALDN  LALT(KC_DOWN)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_tkl_ansi( /* Base */
